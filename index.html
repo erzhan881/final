@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGOV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <ul class="list">
+                <li class="list-item"><a href="index.html">Home</a></li>
+                <li class="list-item"><a href="#report-sectionid">Reports</a></li>
+                <li class="list-item"><a href="#map-sectionid">Submit Issue</a></li>
+                <li class="list-item"><a href="#about-id">About Us</a></li>
+            </ul>
+        </div>
+        <div class="section-title">
+            <div class="fraza">
+                <div class="title">
+                    <img src="/img/Logo.jpg" alt="" class="logo">
+                    <h1 class="title-mess">Crowdsourcing Platform for Budget Expenditure <br> Monitoring</h1>
+                </div>
+                <div class="slogan">
+                    <h2 class="slogan-mess">“Empowering Citizens for</br>
+                        Transparent Governance”</h2>
+                </div>
+            </div>
+        </div>
+        <div class="section-about-us" id = "about-id">
+            <h3 class="about-us-mess">
+                About Us
+            </h3>
+            <div class="boxes">
+                <div class="box box-1">
+                    <p class="text"><span class="paragraph">
+                            Welcome to the Platform for Budget
+                            Expenditure Monitoring,<br>
+                        </span><br>
+                        where transparency meets technology.<br>
+                        We are committed to empowering citizens,<br>
+                        fostering accountability, and driving positive<br>
+                        change through innovative solutions.
+                    </p>
+                </div>
+                <div class="box box-2">
+                    <p class="text"><span class="paragraph">
+                            What We Do<br>
+                        </span><br>
+                        Promote Transparency: By providing real-time data on government spending, we help citizens
+                        understand how public funds are allocated and utilized.<br> <br>
+                        Empower Citizens: Our platform enables users to report anomalies, monitor projects, and engage
+                        in meaningful discussions about budget expenditures.<br> <br>
+                        Leverage Technology: Using advanced tools like AI-powered anomaly detection, we ensure accurate
+                        and efficient monitoring of budgetary activities.
+                    </p>
+                </div>
+                <div class="box box-3">
+                    <p class="text"><span class="paragraph">
+                            Our Mission<br>
+                        </span><br>
+                        Our mission is to create a transparent, accessible, and collaborative space where citizens,
+                        NGOs, and government agencies can work together to ensure responsible budget management. We
+                        believe in the power of technology and collective action to build trust and accountability in
+                        public governance
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-news">
+            <h3 class="news-mess">News</h3>
+            <div class="cards">
+                <div class="card">
+                    <div class="text-part">
+                        <p class="name">
+                            <span class="span">Road Projects: </span>
+                        </p>
+                        <p class="news-info">
+                            A city tendered for a 10-km road construction but only<br>
+                            completed 7 km, with the<br> remaining funds unaccounted for.
+                        </p>
+                    </div>
+                    <div class="img-part">
+                        <img src="/img/image.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text-part">
+                        <p class="name">
+                            <span class="span">School Renovation: </span>
+                        </p>
+                        <p class="news-info">
+                            In a large city, a school renovation project was awarded to a contractor at twice the market
+                            rate, only for the work to fall short of safety standards.
+                        </p>
+                    </div>
+                    <div class="img-part">
+                        <img src="/img/image2.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text-part">
+                        <p class="name">
+                            <span class="span">The Impact on Society </span>
+                        </p>
+                        <p class="news-info">
+                            Wasted public funds directly affect citizens by reducing the availability of essential
+                            services.
+                        </p>
+                    </div>
+                    <div class="img-part">
+                        <img src="/img/image3.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text-part">
+                        <p class="name">
+                            <span class="span">Healthcare Facilities: </span>
+                        </p>
+                        <p class="news-info">
+                            In smaller towns, tenders for clinic construction were allocated to shell companies,
+                            resulting in no construction at all.
+                        </p>
+                    </div>
+                    <div class="img-part">
+                        <img src="/img/image4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-section" id = "map-sectionid">
+            <div class="options">
+                <button type="button" class="btn-op">Projects</button>
+                <button type="button" class="btn-op">Information about the object</button>
+                <button type="button" class="btn-op">Feedback</button>
+                <button type="button" class="btn-op">Recommendations</button>
+            </div>
+            <div class="project-sec">
+                <div class="ops">
+                    <button type="button">Almaty</button>
+                    <button type="button">Abay Avenue</button>
+                    <button type="button">Nazarbayev-Furmanov</button>
+                    <button type="button">Road Repair</button>
+                </div>
+                <div class="er">
+                    <div class="text-infor">
+                        <p class="m"><span class="sp">Current Status of Road Repair:</span> Example from Almaty<br>
+                            <span class="sp">Road:</span> Abay Avenue (Specific Section)
+                            <span class="sp">Location:</span> Stretch between Nazarbayev Street and<br>
+                            Furmanov Street, Almaty, Kazakhstan.
+                        </p>
+                        <p class="n"><span class="sp">Project Description:</span><br>
+                            <br>
+                            The ongoing repair project aims to <br>
+                            improve road surface quality, <br>
+                            enhance drainage systems, and upgrade <br>
+                            pedestrian crossings to <br>
+                            ensure safety.
+                        </p>
+                    </div>
+                    <div class="img-infor">
+                        <img src="img/Rectangle 274.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="information-sec">
+                <div class="ops">
+                    <button type="button">Almaty</button>
+                    <button type="button">Abay Avenue</button>
+                    <button type="button">Nazarbayev-Furmanov</button>
+                    <button type="button">Road Repair</button>
+                </div>
+                <div class="er">
+                    <div class="text-infor">
+                        <p><span class="sp">Status:</span><br>
+                            <br>
+
+
+                            Repairs have been underway for 6 months but are <br>
+                            delayed by 2 months compared to the planned schedule.<br>
+                            Only 60% of the work is complete, with sections near <br>
+                            Furmanov Street still unpaved.
+                        </p>
+                        <p><span class="sp">Budget:</span><br>
+                            <br>
+
+                            Allocated: 500 million KZT.<br>
+                            Spent: 320 million KZT as per latest updates.<br>
+                            Anomalies: Concerns raised over high costs for asphalt and<br>
+                            concrete compared to market prices.
+                        </p>
+                        <p><span class="sp">Quality:</span><br>
+                            <br>
+
+                            Recently completed sections show uneven surfaces <br>
+                            and drainage issues during heavy rains. Residents have<br>
+                            complained about temporary pedestrian paths being unsafe
+                        </p>
+                    </div>
+                    <div class="img-infor">
+                        <img src="img/tr.jpg" alt="" width="369" height="385">
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-sec">
+                <div class="ops">
+                    <button type="button">Almaty</button>
+                    <button type="button">Abay Avenue</button>
+                    <button type="button">Nazarbayev-Furmanov</button>
+                    <button type="button">Road Repair</button>
+                </div>
+                <div class="er">
+                    <div class="text-infor">
+                        <p><span class="sp">Positive</span><br>
+                            <br>
+
+
+
+                            Acknowledgment that repairs were needed due to previous road deterioration.<br>
+                            Support for the inclusion of pedestrian-friendly infrastructure.
+                        </p>
+                        <p class="u"><span class="sp">Negative</span><br>
+                            <br>
+
+                            Lack of clear communication about project delays.<br>
+                            Concerns over potential mismanagement or misuse of funds.
+                        </p>
+                    </div>
+                    <div class="img-infor">
+                        <img src="img/era.jpg" alt="" width="369" height="385">
+                    </div>
+                </div>
+            </div>
+            <div class="rec-sec">
+                <div class="ops">
+                    <button type="button">Almaty</button>
+                    <button type="button">Abay Avenue</button>
+                    <button type="button">Nazarbayev-Furmanov</button>
+                    <button type="button">Road Repair</button>
+                </div>
+                <div class="er">
+                    <div class="text-infor">
+                        <p><span class="sp">Recommendation for monitoring</span></p><br>
+                        <p><span class="sp">Transparency</span><br>
+
+
+
+
+                            Regular updates on the project’s progress and financial details on <br>
+                            a public platform.<br>
+                            Breakdowns of expenses for materials, labor, and additional costs.
+                        </p><br>
+                        <p><span class="sp">Quality Control</span><br>
+
+
+                            Independent inspection of completed sections to ensure
+                            compliance with standards.
+                        </p><br>
+                        <p><span class="sp">Community Engagement:</span><br>
+
+                            Allow residents to report issues or anomalies directly via a <br>
+                            dedicated reporting tool.
+                        </p>
+                    </div>
+                    <div class="img-infor">
+                        <img src="img/op.jpg" alt="" width="369" height="385">
+                    </div>
+                </div>
+            </div>
+            <div class="map-part">
+                <div class="inputs">
+                    <input type="text" id="cityInput" class="input1" placeholder="City" />
+                    <input type="text" id="cityInput" class="input1" placeholder="Region" />
+                    <input type="text" id="cityInput" class="input1" placeholder="Street" />
+                    <input type="text" id="cityInput" class="input1 last" placeholder="Object" />
+                    <button id="searchButton" class="btn-search">Search</button>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="report-section" id = "report-sectionid">
+            <h3 class="report-mess">Report an Issue</h3>
+            <div class="report">
+                <div class="left-part">
+                    <div class="btn-choose">
+                        <button id="chooseDateBtn" type="button">Choose a Date</button>
+                    </div>
+                    <textarea placeholder="Write Information" class="textarea"></textarea>
+                    <div class="btn-send">
+                        <button type="submit"><a href="comments.html">Send</a></button>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <div class="img-1">
+                        +
+                    </div>
+                    <input type="file" class="take">
+                </div>
+            </div>
+        </div>
+        <div class="info-section">
+            <div class="window">
+                <div class="car">
+                    <img src="img/image5.png" alt="">
+                    <p class="texttext">Spending anomalies</p>
+                </div>
+                <div class="car">
+                    <img src="img/image6.png" alt="">
+                    <p class="texttext">Delays</p>
+                </div>
+                <div class="car">
+                    <img src="img/image7.png" alt="">
+                    <p class="texttext">Incomplete projects</p>
+                </div>
+            </div>
+            <div class="navigate">
+                <div class="q-1">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.66667 1.83341L1.5 6.00008L5.66667 10.1667" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p>1 / 4</p>
+                <div class="q-2"><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.33333 10.1666L5.5 5.99992L1.33333 1.83325" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="login-section">
+            <div class="left">
+                <p class="user"><span>User account</span> for tracking<br> reports and saving<br> monitored projects.
+                </p>
+            </div>
+            <div class="right">
+                <div class="window-reg">
+                    <p class="reg">
+                        Login / Registration
+                    </p>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="button" class="btn-1"><a href="reg.html">Registration</a></button>
+                    <button type="button" class="btn-2">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inner-footer">
+                <ul class="list">
+                    <li class="list-item"><a href="index.html">Home</a></li>
+                    <li class="list-item"><a href="#report-sectiondid">Reports</a></li>
+                    <li class="list-item"><a href="#map-sectionid">Submit Issue</a></li>
+                    <li class="list-item"><a href="#aboutid">About Us</a></li>
+                </ul>
+                <div class="int">
+                    <div class="vk">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_776_54)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.5597 15.9999C4.72642 15.9999 0.828883 11.2452 0.666504 3.33325H4.08935C4.20178 9.1404 6.72515 11.6002 8.72389 12.1073V3.33325H11.947V8.34157C13.9208 8.12603 15.9942 5.84377 16.6938 3.33325H19.9169C19.3797 6.427 17.1311 8.70929 15.5321 9.64755C17.1311 10.4083 19.6921 12.399 20.6665 15.9999H17.1186C16.3566 13.5909 14.4579 11.727 11.947 11.4734V15.9999H11.5597Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_776_54">
+                                    <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="email">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.5 2C3.70435 2 2.94129 2.31607 2.37868 2.87868C1.81607 3.44129 1.5 4.20435 1.5 5V5.3015L10.5 10.148L19.5 5.303V5C19.5 4.20435 19.1839 3.44129 18.6213 2.87868C18.0587 2.31607 17.2956 2 16.5 2H4.5ZM19.5 7.0055L10.8555 11.66C10.7462 11.7188 10.6241 11.7496 10.5 11.7496C10.3759 11.7496 10.2538 11.7188 10.1445 11.66L1.5 7.0055V14C1.5 14.7956 1.81607 15.5587 2.37868 16.1213C2.94129 16.6839 3.70435 17 4.5 17H16.5C17.2956 17 18.0587 16.6839 18.6213 16.1213C19.1839 15.5587 19.5 14.7956 19.5 14V7.0055Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
